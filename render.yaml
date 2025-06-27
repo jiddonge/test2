@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: gpt-webhook
+    runtime: python
+    buildCommand: ""
+    startCommand: bash start.sh
+    plan: free
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10
